@@ -19,12 +19,6 @@ public class JavaConfig implements WebMvcConfigurer {
     }
 
     @Bean
-    public AuthorizationController authorizationController(AuthorizationService service) {
-        return new AuthorizationController(service);
-    }
-
-
-    @Bean
     public AuthorizationService authorizationService(UserRepository repository) {
         return new AuthorizationService(repository);
     }

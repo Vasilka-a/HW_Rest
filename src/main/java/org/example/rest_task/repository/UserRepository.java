@@ -7,10 +7,9 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
 public class UserRepository {
 
-    List<User> users = new ArrayList<>();
+    private List <User> users = new ArrayList<>();
     {
         users.add(new User("admin", "admin"));
         users.add(new User("user", "user"));
