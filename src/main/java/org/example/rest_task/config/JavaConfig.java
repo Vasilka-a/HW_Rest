@@ -17,14 +17,4 @@ public class JavaConfig implements WebMvcConfigurer {
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
         argumentResolvers.add(new UserHandlerMethodArgumentResolver());
     }
-
-    @Bean
-    public AuthorizationService authorizationService(UserRepository repository) {
-        return new AuthorizationService(repository);
-    }
-
-    @Bean
-    public UserRepository userRepository() {
-        return new UserRepository();
-    }
 }
