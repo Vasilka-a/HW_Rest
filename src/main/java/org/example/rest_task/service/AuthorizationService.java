@@ -1,8 +1,8 @@
 package org.example.rest_task.service;
 
-import org.example.rest_task.model.Authorities;
 import org.example.rest_task.exception.InvalidCredentials;
 import org.example.rest_task.exception.UnauthorizedUser;
+import org.example.rest_task.model.Authorities;
 import org.example.rest_task.model.User;
 import org.example.rest_task.repository.UserRepository;
 import org.springframework.stereotype.Service;
